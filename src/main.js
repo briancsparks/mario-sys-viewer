@@ -13,7 +13,7 @@ _.each(require('sgsg/flow'), (value, key) => { sg[key] = value; });
 
 const normlz                    = sg.normlz;
 
-const attrsUrl                  = normlz(`xcc/api/v1/dbg-telemetry/watch/`);
+const attrsUrl                  = normlz(`sa/api/v1/dbg-telemetry/watch/`);
 
 export default function main() {
   console.log('main() Starting...');
@@ -23,7 +23,7 @@ export default function main() {
 
     one();
     function one() {
-      // curl -s 'http://local.mobilewebassist.net/xcc/api/v1/dbg-telemetry/watch/' | _print
+      // curl -s 'http://local.mobilewebassist.net/sa/api/v1/dbg-telemetry/watch/' | _print
       return request.get(attrsUrl).end(function(err, res) {
 
         // Start next XHR
