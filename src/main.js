@@ -21,7 +21,7 @@ export default function main() {
   return sg.__run([function(next) {
     next();
 
-    one();
+//    one();
     function one() {
       // curl -s 'http://local.mobilewebassist.net/sa/api/v1/dbg-telemetry/watch/' | _print
       return request.get(attrsUrl).end(function(err, res) {

@@ -1,5 +1,6 @@
 {
   "name": "mario-sys-viewer",
+  "homepage": "http://console.mobilewebassist.net/tview",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
