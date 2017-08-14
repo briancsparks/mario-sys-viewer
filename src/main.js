@@ -13,7 +13,9 @@ _.each(require('sgsg/flow'), (value, key) => { sg[key] = value; });
 
 const normlz                    = sg.normlz;
 
-const attrsUrl                  = normlz(`sa/api/v1/dbg-telemetry/watch/`);
+//const attrsUrl                  = normlz(`sa/api/v1/dbg-telemetry/watch/`);
+//const attrsUrl                  = normlz(`/xapi/v1/dbg-telemetry/watch/`);
+const attrsUrl                  = normlz(`/telemetry/xapi/v1/watch/`);
 
 export default function main() {
   console.log('main() Starting...');
@@ -21,7 +23,7 @@ export default function main() {
   return sg.__run([function(next) {
     next();
 
-//    one();
+    one();
     function one() {
       // curl -s 'http://local.mobilewebassist.net/sa/api/v1/dbg-telemetry/watch/' | _print
       return request.get(attrsUrl).end(function(err, res) {
