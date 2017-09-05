@@ -15,7 +15,7 @@ const normlz                    = sg.normlz;
 
 //const attrsUrl                  = normlz(`sa/api/v1/dbg-telemetry/watch/`);
 //const attrsUrl                  = normlz(`/xapi/v1/dbg-telemetry/watch/`);
-const attrsUrl                  = normlz(`/telemetry/xapi/v1/watch/`);
+const attrsUrl                  = normlz(`/attrstream/xapi/v1/watch/`);
 
 export default function main() {
   console.log('main() Starting...');
