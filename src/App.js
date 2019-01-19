@@ -1,10 +1,9 @@
 
 import React, { Component }     from 'react';
-import TopTabs                  from './Components/TopTabsComponent';
-
 import {
   Navbar, Nav, NavItem, Grid
   }                             from 'react-bootstrap';
+import TopTabs                  from './Components/TopTabsComponent';
 
 import './short.css';
 import './App.css';
